@@ -21,6 +21,9 @@ int main()
 		cerr << "Error opening file" << endl;
 		return 1;
 	}
+
+	//Read the file
+	inFile >> name >> age;
     
     return 0;
 }
