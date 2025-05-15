@@ -9,7 +9,7 @@ int main()
 {
 	//Open the file
 	ifstream inFile("input.txt");
-	ofstream output("output.txt");
+	ofstream access("output.txt");
 
 	//Variables
 	string name;
@@ -31,16 +31,23 @@ int main()
 	//If statement for if access is granted
 	if (age == 18 || age < 25)
 	{
-		output << "Limited Access granted" << endl;
+		access << "Limited Access granted" << endl;
 	}
 	else if (age >= 25)
 	{
-		output << "Full Access granted" << endl;
+		access << "Full Access granted" << endl;
 	}
 	else
 	{
-		output << "Access denied" << endl;
+		access << "Access denied" << endl;
 	}
+
+	//Save and close the file
+	inFile.close();
+	access.close();
+
+	//Tell the user the file is saved
+	cout << "File saved as output.txt" << endl;
     
     return 0;
 }
