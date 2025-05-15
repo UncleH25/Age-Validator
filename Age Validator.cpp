@@ -9,7 +9,7 @@ int main()
 {
 	//Open the file
 	ifstream inFile("input.txt");
-	ofstream access("output.txt");
+	ofstream access("access.txt");
 
 	//Variables
 	string name;
@@ -47,7 +47,7 @@ int main()
 	access.close();
 
 	//Tell the user the file is saved
-	cout << "File saved as output.txt" << endl;
+	cout << "File saved as access.txt" << endl;
     
     return 0;
 }
