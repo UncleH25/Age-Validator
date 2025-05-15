@@ -24,6 +24,9 @@ int main()
 
 	//Read the file
 	inFile >> name >> age;
+
+	//In case of invalid input
+	assert(!inFile.fail());
     
     return 0;
 }
