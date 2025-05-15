@@ -27,6 +27,20 @@ int main()
 
 	//In case of invalid input
 	assert(!inFile.fail());
+
+	//If statement for if access is granted
+	if (age == 18 || age < 25)
+	{
+		output << "Limited Access granted" << endl;
+	}
+	else if (age >= 25)
+	{
+		output << "Full Access granted" << endl;
+	}
+	else
+	{
+		output << "Access denied" << endl;
+	}
     
     return 0;
 }
