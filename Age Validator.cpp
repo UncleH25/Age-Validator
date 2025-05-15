@@ -7,9 +7,13 @@ using namespace std;
 
 int main()
 {
-	// Open the file
+	//Open the file
 	ifstream file("input.txt");
 	ofstream output("output.txt");
+
+	//Variables
+	string name;
+	int age;
     
     return 0;
 }
