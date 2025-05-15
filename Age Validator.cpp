@@ -8,12 +8,19 @@ using namespace std;
 int main()
 {
 	//Open the file
-	ifstream file("input.txt");
+	ifstream inFile("input.txt");
 	ofstream output("output.txt");
 
 	//Variables
 	string name;
 	int age;
+
+	//Validate the file
+	if (!inFile)
+	{
+		cerr << "Error opening file" << endl;
+		return 1;
+	}
     
     return 0;
 }
